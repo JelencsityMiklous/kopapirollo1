@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    background-color: lightblue;
+}
+
+header{
+    font-size: 250%;
+    margin: 0 auto;
+    color:black;
+}
+
+div{
+    font-size: 200%;
+    margin: 0 auto;
+    color:black;
+}
+
+img{
+    display: inline-flex;
+    width: 10%;
+    align-items:center;
+    justify-content: center;
+}
+
+#container{
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
