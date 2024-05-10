@@ -4,15 +4,16 @@ body{
 }
 
 header{
-    font-size: 250%;
-    margin: 0 auto;
-    color:black;
+    font-size: 6vw;
 }
-
 div{
-    font-size: 200%;
-    margin: 0 auto;
-    color:black;
+    font-size: 2vw;
+}
+h2{
+    font-size: 1.5vw;
+}
+h3{
+    font-size: 1.5vw;
 }
 
 img{
@@ -27,4 +28,31 @@ img{
     margin: 0 auto;
     justify-content: center;
     
+}
+
+.teljes{
+    border: 10px solid rgb(255, 255, 255);
+    margin: 0 10%;
+    border-radius: 100px;
+    box-shadow: 10px 10px 10px black;
+}
+
+@media only screen and (max-width: 780px) {
+img{
+    width: 25%;
+    
+}
+header{
+    font-size: 6vw;
+}
+div{
+    font-size: 3vw;
+}
+h2{
+    font-size: 3vw;
+}
+h3{
+    font-size: 3vw;
+}
+
 }

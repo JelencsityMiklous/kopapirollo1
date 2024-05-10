@@ -4,6 +4,8 @@ let ollo = document.getElementById("ollo");
 let eredmeny = document.getElementById("eredmeny");
 let pontok = document.getElementById("pontokszama");
 let pontszam = 0;
+let geppontok = document.getElementById("geppontokszama");
+let geppontokszama =0;
 
 
 function kovalasztas(){
@@ -20,13 +22,15 @@ function kovalasztas(){
     else if(randomszam==1){
         document.getElementById("gepvalasztas").src="papir.png"
         eredmeny.innerHTML="Eredmény: Vesztettél!"
-        pontszam-=1;
+        geppontokszama+=1;
+        geppontok.innerHTML=`Gép pontok száma: ${geppontokszama}`
         pontok.innerHTML=`Pontok: ${pontszam}`
     }
     else if(randomszam==2){
         document.getElementById("gepvalasztas").src="ollo.png"
         eredmeny.innerHTML="Eredmény: Nyertél!"
         pontszam+=1;
+        geppontok.innerHTML=`Gép pontok száma: ${geppontokszama}`
         pontok.innerHTML=`Pontok: ${pontszam}`
     }
 
@@ -43,6 +47,7 @@ function papirvalasztas(){
         document.getElementById("gepvalasztas").src="ko.png"
         eredmeny.innerHTML="Eredmény: Nyertél!"
         pontszam+=1;
+        geppontok.innerHTML=`Gép pontok száma: ${geppontokszama}`
         pontok.innerHTML=`Pontok: ${pontszam}`
     }
     else if(randomszam==1){
@@ -52,7 +57,8 @@ function papirvalasztas(){
     else if(randomszam==2){
         document.getElementById("gepvalasztas").src="ollo.png"
         eredmeny.innerHTML="Eredmény: Vesztettél!"
-        pontszam-=1;
+        geppontokszama+=1;
+        geppontok.innerHTML=`Gép pontok száma: ${geppontokszama}`
         pontok.innerHTML=`Pontok: ${pontszam}`
     }
 
@@ -68,13 +74,15 @@ function ollovalasztas(){
     if(randomszam==0){
         document.getElementById("gepvalasztas").src="ko.png"
         eredmeny.innerHTML="Eredmény: Vesztettél!"
-        pontszam-=1;
+        geppontokszama+=1;
+        geppontok.innerHTML=`Gép pontok száma: ${geppontokszama}`
         pontok.innerHTML=`Pontok: ${pontszam}`
     }
     else if(randomszam==1){
         document.getElementById("gepvalasztas").src="papir.png"
         eredmeny.innerHTML="Eredmény: Nyertél!"
         pontszam+=1;
+        geppontok.innerHTML=`Gép pontok száma: ${geppontokszama}`
         pontok.innerHTML=`Pontok: ${pontszam}`
     }
     else if(randomszam==2){
